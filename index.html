@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Eduardo Royo Mas - Portfolio showcasing education, work experience, and projects.">
-    <meta name="keywords" content="Mathematics, Economics, Finance, Investment, Portfolio, CV, Resume">
-    <meta name="author" content="Eduardo Royo Mas">
-    <title>Eduardo Royo Mas - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="ERM & Associates Advisory – Strategic & Regulatory Affairs" />
+    <meta name="keywords" content="ERM & Associates, Strategic Affairs, Regulatory Affairs, Advisory, Consulting, Finance, Law" />
+    <meta name="author" content="ERM & Associates Advisory" />
+    <title>ERM & Associates Advisory</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <div class="container">
-            <h1><a href="index.html">Eduardo Royo Mas</a></h1>
-            <div class="menu-toggle">&#9776;</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
+        <div class="container nav-container">
+            <!-- PLACE YOUR LOGO IMAGE HERE -->
+            <a href="index.html" class="logo-link">
+                <img src="Images/your-logo.png" alt="ERM & Associates Advisory Logo" class="logo" />
+                <!-- Replace 'Images/your-logo.png' with your actual logo file path -->
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="menu-toggle">&#9776;</div>
         </div>
     </nav>
 
-<!-- Hero Section with Background Image -->
-<header class="hero">
-    <div class="container hero-content">
-        <img src="Images/Foto EY Eduardo Royo Mas.jpg" alt="Eduardo Royo Mas" class="hero-profile-photo">
-        <div class="hero-text">
-            <h2>Welcome to My Personal Website</h2>
-            <a href="#about" class="cta-button">Learn More About Me</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>ERM & Associates Advisory</h1>
+            <p class="hero-subtitle">Strategic & Regulatory Affairs | Elite Advisory Services</p>
+            <p class="hero-description">
+                Delivering top-tier consulting in finance, regulatory strategy, and legal advisory.
+                Backed by expertise and experience tailored to empower your business.
+            </p>
+            <a href="contact.html" class="cta-button">Engage With Us</a>
         </div>
-    </div>
-</header>
+    </header>
 
-
-
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! My name is Eduardo Royo Mas, a dedicated finance professional with a strong passion for mathematics and its applications in finance and economics. I am currently studyin a Bachelor of Science in Mathematics and Economics from the University of London, under the academic direction of the London School of Economics (LSE). Alongside my studies, I am employed full-time as a Relationship Manager at UBS, where I specialize in the investment funds industry. I really like mathematics and I continuously work to expand my knowledge and apply it to solve real-world challenges.</p>
+    <!-- Highlight Section -->
+    <section class="highlights container">
+        <div class="highlight">
+            <h3>Strategic Consulting</h3>
+            <p>Tailored strategies designed to maximize regulatory compliance and business performance.</p>
+        </div>
+        <div class="highlight">
+            <h3>Regulatory Expertise</h3>
+            <p>Deep knowledge in EU and global regulatory frameworks ensuring full compliance and risk mitigation.</p>
+        </div>
+        <div class="highlight">
+            <h3>Elite Advisory Team</h3>
+            <p>A curated team of specialists providing unmatched legal and financial advisory services.</p>
         </div>
     </section>
 
-
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Eduardo Royo Mas. All rights reserved.</p>
+        <div class="container footer-container">
+            <p>© 2025 ERM & Associates Advisory. All rights reserved.</p>
+            <p>1 Rue Friedrich Wilhelm Engelhardt, Office 2, 2nd floor, L-1464, Luxembourg, LU</p>
         </div>
     </footer>
-    
+
     <!-- JavaScript for Burger Menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.querySelector(".menu-toggle");
-            const navMenu = document.querySelector("nav ul");
+            const navMenu = document.querySelector(".nav-menu");
 
             menuToggle.addEventListener("click", function () {
                 navMenu.classList.toggle("active");
