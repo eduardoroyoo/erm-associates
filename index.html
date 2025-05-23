@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Eduardo Royo Mas - Portfolio showcasing education, work experience, and projects.">
+    <meta name="keywords" content="Mathematics, Economics, Finance, Investment, Portfolio, CV, Resume">
+    <meta name="author" content="Eduardo Royo Mas">
+    <title>Eduardo Royo Mas - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1><a href="index.html">Eduardo Royo Mas</a></h1>
+            <div class="menu-toggle">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Hero Section with Background Image -->
+<header class="hero">
+    <div class="container hero-content">
+        <img src="Images/Foto EY Eduardo Royo Mas.jpg" alt="Eduardo Royo Mas" class="hero-profile-photo">
+        <div class="hero-text">
+            <h2>Welcome to My Personal Website</h2>
+            <a href="#about" class="cta-button">Learn More About Me</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! My name is Eduardo Royo Mas, a dedicated finance professional with a strong passion for mathematics and its applications in finance and economics. I am currently studyin a Bachelor of Science in Mathematics and Economics from the University of London, under the academic direction of the London School of Economics (LSE). Alongside my studies, I am employed full-time as a Relationship Manager at UBS, where I specialize in the investment funds industry. I really like mathematics and I continuously work to expand my knowledge and apply it to solve real-world challenges.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Eduardo Royo Mas. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript for Burger Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector("nav ul");
+
+            menuToggle.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
